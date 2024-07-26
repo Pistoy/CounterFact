@@ -11,6 +11,14 @@
 		2B8ECAED2C538B8400C85C4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8ECAEC2C538B8400C85C4A /* ContentView.swift */; };
 		2B8ECAEF2C538B8C00C85C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8ECAEE2C538B8C00C85C4A /* Assets.xcassets */; };
 		2B8ECAF22C538B8C00C85C4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8ECAF12C538B8C00C85C4A /* Preview Assets.xcassets */; };
+		2B8ECAFA2C538BBC00C85C4A /* FetchFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8ECAF92C538BBC00C85C4A /* FetchFact.swift */; };
+		2B8ECB002C538DA500C85C4A /* IncreaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8ECAFF2C538DA500C85C4A /* IncreaseButton.swift */; };
+		2B8ECB022C538E0100C85C4A /* VIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8ECB012C538E0100C85C4A /* VIewModel.swift */; };
+		2B8ECB062C538ED000C85C4A /* DecreaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8ECB052C538ED000C85C4A /* DecreaseButton.swift */; };
+		2B8ECB082C538F8F00C85C4A /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8ECB072C538F8F00C85C4A /* NumberView.swift */; };
+		2B8ECB0B2C538FE900C85C4A /* TimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8ECB0A2C538FE900C85C4A /* TimerButton.swift */; };
+		2B8ECB0D2C53904300C85C4A /* FactButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8ECB0C2C53904300C85C4A /* FactButton.swift */; };
+		2B8ECB0F2C5390D800C85C4A /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8ECB0E2C5390D800C85C4A /* Fact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		2B8ECAEC2C538B8400C85C4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2B8ECAEE2C538B8C00C85C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B8ECAF12C538B8C00C85C4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B8ECAF92C538BBC00C85C4A /* FetchFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFact.swift; sourceTree = "<group>"; };
+		2B8ECAFF2C538DA500C85C4A /* IncreaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreaseButton.swift; sourceTree = "<group>"; };
+		2B8ECB012C538E0100C85C4A /* VIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIewModel.swift; sourceTree = "<group>"; };
+		2B8ECB052C538ED000C85C4A /* DecreaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecreaseButton.swift; sourceTree = "<group>"; };
+		2B8ECB072C538F8F00C85C4A /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		2B8ECB0A2C538FE900C85C4A /* TimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerButton.swift; sourceTree = "<group>"; };
+		2B8ECB0C2C53904300C85C4A /* FactButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactButton.swift; sourceTree = "<group>"; };
+		2B8ECB0E2C5390D800C85C4A /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		2B8ECB102C539A5A00C85C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +68,11 @@
 		2B8ECAE92C538B8400C85C4A /* CF */ = {
 			isa = PBXGroup;
 			children = (
+				2B8ECB102C539A5A00C85C4A /* Info.plist */,
 				2B8ECAEA2C538B8400C85C4A /* CFApp.swift */,
-				2B8ECAEC2C538B8400C85C4A /* ContentView.swift */,
+				2B8ECB032C538E0600C85C4A /* ViewModel */,
+				2B8ECAFB2C538BC900C85C4A /* Service */,
+				2B8ECAF82C538BAD00C85C4A /* View */,
 				2B8ECAEE2C538B8C00C85C4A /* Assets.xcassets */,
 				2B8ECAF02C538B8C00C85C4A /* Preview Content */,
 			);
@@ -65,6 +85,52 @@
 				2B8ECAF12C538B8C00C85C4A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B8ECAF82C538BAD00C85C4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B8ECAEC2C538B8400C85C4A /* ContentView.swift */,
+				2B8ECB042C538E7800C85C4A /* Buttons */,
+				2B8ECB092C538FA900C85C4A /* NumberView */,
+				2B8ECB0E2C5390D800C85C4A /* Fact.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B8ECAFB2C538BC900C85C4A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2B8ECAF92C538BBC00C85C4A /* FetchFact.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2B8ECB032C538E0600C85C4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2B8ECB012C538E0100C85C4A /* VIewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2B8ECB042C538E7800C85C4A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2B8ECAFF2C538DA500C85C4A /* IncreaseButton.swift */,
+				2B8ECB052C538ED000C85C4A /* DecreaseButton.swift */,
+				2B8ECB0A2C538FE900C85C4A /* TimerButton.swift */,
+				2B8ECB0C2C53904300C85C4A /* FactButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		2B8ECB092C538FA900C85C4A /* NumberView */ = {
+			isa = PBXGroup;
+			children = (
+				2B8ECB072C538F8F00C85C4A /* NumberView.swift */,
+			);
+			path = NumberView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +204,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B8ECAED2C538B8400C85C4A /* ContentView.swift in Sources */,
+				2B8ECB0B2C538FE900C85C4A /* TimerButton.swift in Sources */,
+				2B8ECB062C538ED000C85C4A /* DecreaseButton.swift in Sources */,
+				2B8ECB0D2C53904300C85C4A /* FactButton.swift in Sources */,
+				2B8ECAFA2C538BBC00C85C4A /* FetchFact.swift in Sources */,
 				2B8ECAEB2C538B8400C85C4A /* CFApp.swift in Sources */,
+				2B8ECB002C538DA500C85C4A /* IncreaseButton.swift in Sources */,
+				2B8ECB0F2C5390D800C85C4A /* Fact.swift in Sources */,
+				2B8ECB022C538E0100C85C4A /* VIewModel.swift in Sources */,
+				2B8ECB082C538F8F00C85C4A /* NumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +344,7 @@
 				DEVELOPMENT_TEAM = RAVRJW6GQC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CF/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +374,7 @@
 				DEVELOPMENT_TEAM = RAVRJW6GQC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CF/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
