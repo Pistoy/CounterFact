@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct NumberView: View {
-  @Binding var count: Int
+  @ObservedObject var model: ViewModel
   var body: some View {
-    Text(count.description)
+    Text(model.count.description)
         .font(.largeTitle)
         .padding()
         .background(Color.black.opacity(0.1))

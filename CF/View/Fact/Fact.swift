@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct Fact: View {
-  @Binding var fact: String
-  @Binding var isLoading: Bool
+  @ObservedObject var model: ViewModel
   var service = FetchFact()
   var body: some View {
-    if isLoading {
+    if model.isLoading {
         ProgressView()
     } else {
-        Text(fact)
+      Text(model.fact)
             .font(.largeTitle)
             .multilineTextAlignment(.center)
             .padding()

@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct TimerButton: View {
-  @Binding var isTimerRunning: Bool
+  @ObservedObject var model: ViewModel
   var body: some View {
-    Button(isTimerRunning ? "Stop timer" : "Start timer") {
-        isTimerRunning.toggle()
-      // Make timer
-      
+    Button(model.isTimerRunning ? "Stop timer" : "Start timer") {
+      model.timerButton()
     }
     .font(.largeTitle)
     .padding()

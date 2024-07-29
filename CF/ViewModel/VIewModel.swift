@@ -7,12 +7,36 @@
 
 import Foundation
 
-extension ContentView {
+class ViewModel: ObservableObject {
+  @Published var count: Int = 0
+  @Published var isTimerRunning: Bool = false
+  @Published var fact: String = "" {
+    didSet {
+      isLoading = false
+    }
+  }
+  @Published var isLoading: Bool = false
+  @Published var alertShowing: Bool = false
   
-  class ViewModel: ObservableObject {
-    var count: Int = 0
-    var isTimerRunning: Bool = false
-    var fact: String = ""
-    var isLoading = false
+  func timerButton() {
+    isTimerRunning.toggle()
+    // Make timer
+    Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+      if !self.isTimerRunning {
+        timer.invalidate()
+      } else {
+        self.count += 1
+      }
+    }
+  }
+  
+  func decrease() {
+    if count > 0 {
+      count -= 1
+    }
+  }
+  
+  func increase() {
+    count += 1
   }
 }
