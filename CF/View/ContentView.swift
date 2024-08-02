@@ -9,24 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
   
-  @ObservedObject private var viewModel = ViewModel()
+  @ObservedObject var viewModel = ViewModel()
   
     var body: some View {
       VStack {
-        NumberView(count: $viewModel.count)
-        HStack {
-          DecreaseButton(count: $viewModel.count)
-          IncreaseButton(count: $viewModel.count)
-        }
-        TimerButton(isTimerRunning: $viewModel.isTimerRunning)
-        FactButton(fact: $viewModel.fact, count: $viewModel.count)
-        Fact(fact: $viewModel.fact, isLoading: $viewModel.isLoading)
+        NumberView(model: viewModel)
+        DecreaseIncrease(model: viewModel)
+        TimerButton(model: viewModel)
+        FactButton(model: viewModel)
+        Fact(model: viewModel)
       }
     }
 }
-
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
